@@ -6,7 +6,6 @@ var sel = document.querySelector(".hamburgergold");
 var selmenu = document.querySelector(".navbar-collapse");
 var btnGold = document.getElementById("lineGold"); // Selectionne un ID dans le html
 btnGold.addEventListener("click", function(){ // fait reference à la syntaxe jQuery => $("selector").click( function() { }
-console.log(sel)
 // classList permet d'ajouter un element css il y a d'autre exemple comme celui ci classList.remove() etc
 sel.classList.toggle("closed")
 selmenu.classList.toggle("navbar-active") });
