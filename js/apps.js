@@ -20,7 +20,8 @@ if ($('#scrollbot').length > 0) {
      window.requestAnimationFrame(function(){ 
   
       if(scroll_top === 0) {
-        $('.menu nav li a').css({ color: "#fff" })
+        $('.menu nav li a').css({ color: "#fff" }) 
+        $('.navbar-collapse').css({ background: "#2c2c2c" })
         $("#scrollbot")
             .css({ 
               transition: 'ease-out .2s',
@@ -39,6 +40,7 @@ if ($('#scrollbot').length > 0) {
 
         if(scroll_top < last_scroll_top) {
           $('.menu nav li a').css({ color: "#000" })
+          $('.navbar-collapse').css({ background: "#fff" })
           $('.hamburgergold span').css({ background: "#000"})
          $("#scrollbot")
             .css({

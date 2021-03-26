@@ -816,39 +816,13 @@ footer {
   
   h1.logo a { font-size: 20px; } 
 
-  .right_img_blindfrontiere { 
-    display: block; 
-    transform : translateX(-10px);
-    transition : all 1s ease-in-out, opacity 1s;
-    margin-top: 20px;
-    max-width:300px;
-  }
 
-  .vaisseau_left {
-    position: relative;
-    right: -100px;
-    max-width: 600px;
-    top: -600px;
-}
+.navbar-collapse ul.menu-collapse li { display: block; color: #000; }
 
-.right_block_txt {
-  width: 100%;
-  max-width: 330px;
-  display: flex;
-  justify-content: flex-end;
-  text-align: right;
+.block_contact {
   position: relative;
-  top: -710px;
-  right: -300px;
+  bottom: 0;
 }
-
-.vaisseau_right {
-  z-index: 1;
-  position: relative;
-  top: 10px;
-  width: 100%;
-  transform: translateX(325px);
-  max-width: 450px; }
 
 .content_team {
   display: grid;
@@ -856,13 +830,6 @@ footer {
   text-align: center;
   grid-template-columns: 1fr;
   column-gap: 10px;
-}
-
-.navbar-collapse ul.menu-collapse li { display: block; color: #000; }
-
-.block_contact {
-  position: relative;
-  bottom: 0;
 }
 
 }
@@ -884,6 +851,47 @@ footer {
     left: 0;
     top: 120px;
     }
+
+    .navbar-collapse {
+      position: absolute;
+      background: #fff;
+      width: 100%;
+      z-index: 4;
+      justify-content: center;
+      align-items: center;
+      max-width: 575px;
+      margin: 0 auto;
+      display: none;
+      height: 300px;
+      right: 0;
+      left: 0;
+      top: 120px; }
+    
+    .navbar-collapse ul li {
+      color:#000;
+      font-weight: bold;
+      text-align: center;
+      margin: 20px; }
+    
+    .navbar-collapse ul li a{ color:#000; }
+    
+    .navbar-active {     
+      display: flex;
+      position: absolute;
+      padding: 0;
+      z-index: 5;}
+  
+      .navbar-collapse ul.menu-collapse li { 
+        display: block; 
+        color: #000; }
+    
+    .menu li { display:none; }
+    
+    h1.logo a { font-size: 20px; } 
+  
+  
+  .navbar-collapse ul.menu-collapse li { display: block; color: #000; }
+  
 
     .bar_menu {
       border-right: solid 2px #fff;
