@@ -373,7 +373,6 @@ footer {
 .logo_intro {
   width: 100%;
   max-width: 400px;
-  /* margin: 0 300px;  */
 }
 
 .block_introduction {
@@ -582,18 +581,7 @@ footer {
 .block_info { padding: 20px }
 
 /* Responsive */
-@media screen and (max-width: 3000px){ 
-  .decors {
-    background-image: url(../img/blueimage.png);
-    background-size: cover;
-    background-position: -210px 135px;
-    background-repeat: no-repeat;
-    height: 800px;
-    position: absolute;
-    bottom: 627px;
-    width: 100%;
-  }
-}
+
 
 @media screen and (max-width: 1440px){ 
   /* Laptop L */
@@ -610,6 +598,17 @@ footer {
     max-width: 492px;
     margin: 0 10px;
   }
+
+  .decors {
+    background-image: url(../img/blueimage.png);
+    background-size: cover;
+    background-position: -210px 135px;
+    background-repeat: no-repeat;
+    height: 800px;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
 
 }
 

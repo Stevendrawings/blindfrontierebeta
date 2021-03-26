@@ -45,16 +45,16 @@
                         <ul>
                             <li><a href="#accueil">Accueil</a></li>
                             <li><a href="#resume">Concept art</a></li>
-                            <li><a href="#caradesign">About</a></li>
+                            <li><a href="#history">Histoire</a></li>
                             <li><a href="#equipe">Team</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                             <div class="navbar-collapse">
                                 <ul class="menu-collapse">
                                 <li><a href="#accueil">Accueil</a></li>
-                                <li><a href="#resume">Teaser</a></li>
-                                <li><a href="#caradesign">Histoire</a></li>
-                                <li><a href="#equipe">Concept art</a></li>
+                                <li><a href="#resume">Concept art</a></li>
+                                <li><a href="#history">Histoire</a></li>
+                                <li><a href="#equipe">Team</a></li>
                                 <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>
@@ -76,7 +76,7 @@
                                 <div class="container">
                                     <div class="wrapper_slider"> 
                                         <div class="wrapper_intro" style="z-index: 2">
-                                            
+
                                             <div class="block_introduction">
                                                 <div class="logo_intro"><img src="img/stylewhiteblindfrontierelogo.svg" alt="logo svg blind frontiere"></div>
                                                 <h2 class="sous_titre_store"><strong>Store et reseaux sociaux</strong></h2>
@@ -137,7 +137,7 @@
 
 <section>
     <div class="down-arrow">
-        <a href="#about"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+        <a href="#resume"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
     </div>
 </section>
 
@@ -151,7 +151,7 @@
     </div>
 </section>
 
-    <section>
+    <section id="resume">
             <div class="content-beauSlider">
                 <div id="beauSlider">
                     <div class="block_slider"><iframe src="https://www.youtube-nocookie.com/embed/UZ3-EMJQqF0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -175,7 +175,7 @@
                 </div>
     </section>
 
-    <section>
+    <section id="history">
         <div class="content_trealer">
             <div class="container">
 
@@ -205,7 +205,7 @@
         </div>  
     </section>
 
-    <section>
+    <section id="equipe">
         <div class="container">
             <h2 class="soustitre_blindfrontiere space-team">C'est notre Team ? </h2>
             <div class="content_team">
@@ -218,7 +218,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="contact">
     <footer>
         <div class="footer_deco"></div>
         <div class="container">
@@ -279,7 +279,7 @@
         <script>
             //FONCTION SCROLL TO
                 $(function() {
-                    $('.menu nav li a').bind('click',function(event){
+                    $('.menu nav li a, .down-arrow a').bind('click',function(event){
                         var $anchor = $(this);
                         
                         $('html, body').stop().animate({
