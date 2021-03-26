@@ -1,25 +1,23 @@
 .content-beauSlider {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 280px; }
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+}
 
 #beauSlider {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     color: rgb(0, 116, 228);
-    font-weight: bold;
-    text-align: center;
-    position: absolute;
+    position: relative;
     left: 50%;
-    top: 1200px;
+    top: 300px;
     transform: translate(-9%, -50%);
     -webkit-transition: all .7s ease-out;
     -moz-transition: all .7s ease-out;
     -ms-transition: all .7s ease-out;
     -o-transition: all .7s ease-out;
-    transition: all .7s ease-out }
+    transition: all .7s ease-out;
+}
 
 .block_slider  {
     z-index: 5;
@@ -76,5 +74,3 @@ span.arrowprev {
     left: -14px;
     bottom: 17px;
 }
-
-

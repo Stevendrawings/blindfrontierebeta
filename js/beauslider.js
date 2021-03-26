@@ -13,7 +13,6 @@ var approxima = (widthWindow * 50) / widthItems
 var less = approxima * 2
 var count = 0;
 
-
 // Width landing page
 beauSlider.style.transform = "translate(" + (-approxima - (less * count) + "%") + ", -50%)";
 
@@ -33,7 +32,7 @@ beauSlider.style.transform = "translate(" + (-approxima - (less * count) + "%") 
         nextItem.addEventListener("click", nextSlide)
         prevItem.addEventListener("click", prevSlide)
 
-    // autoPlay
+    autoPlay
     function autoPlay(){ nextSlide(); }
 
     setInterval(autoPlay, 3000)
